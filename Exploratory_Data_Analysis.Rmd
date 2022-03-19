@@ -1,0 +1,53 @@
+---
+title: "Exploratory Data Analysis"
+output: html_document
+---
+
+```{r}
+#load all datasets
+library(readr)
+
+all_data_files <- list.files(path="./data/", pattern="*.csv")  
+all_data_files 
+
+#dynamially assign dataframe names for all the csv files
+for(i in 1:length(all_data_files)) {                              
+  assign(paste0(tools::file_path_sans_ext(all_data_files[i]), "_df"),                                  
+         read.csv(paste0("./data/",
+                   all_data_files[i])))
+}
+```
+
+```{r}
+install.packages('lubridate')
+install.packages('plotly')
+library(plotly)
+library(lubridate)
+library(ggplot2)
+
+#combining answers with scores and plotting the time series
+df = merge(answer_scores_df, answers_df, by.x = "id", , by.y = "answers_id", all.x = TRUE, all.y = TRUE)
+
+df$answers_date_added = substring(df$answers_date_added, 1, 10)
+df$answers_date_added = as.Date(df$answers_date_added, format = '%Y-%m-%d')
+str(df)
+
+p = df %>% group_by(answers_date_added) %>% summarise(n.answer = length(answers_date_added)) %>% ggplot((aes(x = answers_date_added, y = n.answer))) + geom_point()
+
+ggplotly(p)
+
+```
+
+
+```{r}
+#combining answers with scores and plotting the time series
+df1 = merge(question_scores_df, questions_df, by.x = "id", , by.y = "questions_id", all.x = TRUE, all.y = TRUE)
+
+df1$questions_date_added = substring(df1$questions_date_added, 1, 10)
+df1$questions_date_added = as.Date(df1$questions_date_added, format = '%Y-%m-%d')
+str(df1)
+
+p1 = df1 %>% group_by(questions_date_added) %>% summarise(n.question = length(questions_date_added)) %>% ggplot((aes(x = questions_date_added, y = n.question))) + geom_point()
+
+ggplotly(p1)
+```
