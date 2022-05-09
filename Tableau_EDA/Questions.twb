@@ -1,0 +1,856 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0108.1039                               -->
+<workbook original-version='18.1' source-build='2021.4.3 (20214.22.0108.1039)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='questions' inline='true' name='federated.0an0ftc1u6a4ml12s8bfb18dgfpe' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='questions' name='textscan.0dezwj61i8gcx410cyp94138k3cd'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/shina/OneDrive/Desktop/Spring 22/6211 Advance Business Analytics/Final Project/questions.csv' dataRefreshTime='' directory='C:/Users/shina/OneDrive/Desktop/Spring 22/6211 Advance Business Analytics/Final Project' filename='C:/Users/shina/AppData/Local/Temp/TableauTemp/0xvzdzp1cg4wcq15y2e1314ejxv9/questions.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0dezwj61i8gcx410cyp94138k3cd' name='questions.csv' table='[questions#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:U10001:no:A1:U10001:1' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='questions_id' ordinal='1' />
+            <column datatype='string' name='questions_author_id' ordinal='2' />
+            <column datatype='string' date-parse-format='yyyy-MM-dd HH:mm:ss zzzZ' name='questions_date_added' ordinal='3' />
+            <column datatype='string' name='questions_title' ordinal='4' />
+            <column datatype='string' name='questions_body' ordinal='5' />
+            <column datatype='integer' name='question_score' ordinal='6' />
+            <column datatype='string' name='all_tags' ordinal='7' />
+            <column datatype='integer' name='tag_count' ordinal='8' />
+            <column datatype='integer' name='emails_sent_count' ordinal='9' />
+            <column datatype='integer' name='professionals_notified_count' ordinal='10' />
+            <column datatype='string' name='first_email_sent' ordinal='11' />
+            <column datatype='string' name='last_email_sent' ordinal='12' />
+            <column datatype='integer' name='total_answers' ordinal='13' />
+            <column datatype='string' name='first_answer_posted' ordinal='14' />
+            <column datatype='string' name='last_answer_posted' ordinal='15' />
+            <column datatype='integer' name='total_comments' ordinal='16' />
+            <column datatype='string' name='first_comment_posted' ordinal='17' />
+            <column datatype='string' name='last_comment_posted' ordinal='18' />
+            <column datatype='string' name='students_location' ordinal='19' />
+            <column datatype='string' name='students_date_joined' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0dezwj61i8gcx410cyp94138k3cd' name='questions.csv' table='[questions#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:U10001:no:A1:U10001:1' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='questions_id' ordinal='1' />
+            <column datatype='string' name='questions_author_id' ordinal='2' />
+            <column datatype='string' date-parse-format='yyyy-MM-dd HH:mm:ss zzzZ' name='questions_date_added' ordinal='3' />
+            <column datatype='string' name='questions_title' ordinal='4' />
+            <column datatype='string' name='questions_body' ordinal='5' />
+            <column datatype='integer' name='question_score' ordinal='6' />
+            <column datatype='string' name='all_tags' ordinal='7' />
+            <column datatype='integer' name='tag_count' ordinal='8' />
+            <column datatype='integer' name='emails_sent_count' ordinal='9' />
+            <column datatype='integer' name='professionals_notified_count' ordinal='10' />
+            <column datatype='string' name='first_email_sent' ordinal='11' />
+            <column datatype='string' name='last_email_sent' ordinal='12' />
+            <column datatype='integer' name='total_answers' ordinal='13' />
+            <column datatype='string' name='first_answer_posted' ordinal='14' />
+            <column datatype='string' name='last_answer_posted' ordinal='15' />
+            <column datatype='integer' name='total_comments' ordinal='16' />
+            <column datatype='string' name='first_comment_posted' ordinal='17' />
+            <column datatype='string' name='last_comment_posted' ordinal='18' />
+            <column datatype='string' name='students_location' ordinal='19' />
+            <column datatype='string' name='students_date_joined' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:U10001:no:A1:U10001:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>69995</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[questions.csv_5615D94D4E7843A791325C880A81A4DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>questions_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[questions_id]</local-name>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias>questions_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[questions.csv_5615D94D4E7843A791325C880A81A4DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>questions_author_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[questions_author_id]</local-name>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias>questions_author_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[questions.csv_5615D94D4E7843A791325C880A81A4DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>questions_date_added</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[questions_date_added]</local-name>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias>questions_date_added</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[questions.csv_5615D94D4E7843A791325C880A81A4DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>questions_title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[questions_title]</local-name>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias>questions_title</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[questions.csv_5615D94D4E7843A791325C880A81A4DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>questions_body</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[questions_body]</local-name>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias>questions_body</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[questions.csv_5615D94D4E7843A791325C880A81A4DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>question_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[question_score]</local-name>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias>question_score</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[questions.csv_5615D94D4E7843A791325C880A81A4DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>all_tags</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[all_tags]</local-name>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias>all_tags</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[questions.csv_5615D94D4E7843A791325C880A81A4DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tag_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tag_count]</local-name>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias>tag_count</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[questions.csv_5615D94D4E7843A791325C880A81A4DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>emails_sent_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[emails_sent_count]</local-name>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias>emails_sent_count</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[questions.csv_5615D94D4E7843A791325C880A81A4DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>professionals_notified_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[professionals_notified_count]</local-name>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias>professionals_notified_count</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[questions.csv_5615D94D4E7843A791325C880A81A4DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>first_email_sent</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[first_email_sent]</local-name>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias>first_email_sent</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[questions.csv_5615D94D4E7843A791325C880A81A4DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_email_sent</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[last_email_sent]</local-name>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias>last_email_sent</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[questions.csv_5615D94D4E7843A791325C880A81A4DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_answers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_answers]</local-name>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias>total_answers</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[questions.csv_5615D94D4E7843A791325C880A81A4DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>first_answer_posted</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[first_answer_posted]</local-name>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias>first_answer_posted</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[questions.csv_5615D94D4E7843A791325C880A81A4DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_answer_posted</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[last_answer_posted]</local-name>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias>last_answer_posted</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[questions.csv_5615D94D4E7843A791325C880A81A4DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_comments</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_comments]</local-name>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias>total_comments</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[questions.csv_5615D94D4E7843A791325C880A81A4DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>first_comment_posted</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[first_comment_posted]</local-name>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias>first_comment_posted</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[questions.csv_5615D94D4E7843A791325C880A81A4DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_comment_posted</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[last_comment_posted]</local-name>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias>last_comment_posted</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[questions.csv_5615D94D4E7843A791325C880A81A4DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>students_location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[students_location]</local-name>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias>students_location</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[questions.csv_5615D94D4E7843A791325C880A81A4DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>students_date_joined</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[students_date_joined]</local-name>
+            <parent-name>[questions.csv]</parent-name>
+            <remote-alias>students_date_joined</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[questions.csv_5615D94D4E7843A791325C880A81A4DF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Count' caption='Date' datatype='date' datatype-customized='true' name='[Calculation_1311954897957199872]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy-MM-dd&quot;, SPLIT(STR([questions_date_added]),&apos; &apos;,1) )) ' />
+      </column>
+      <column caption='Time' datatype='string' datatype-customized='true' name='[Calculation_1311954897958158337]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='SPLIT(STR([questions_date_added]),&apos; &apos;,2)' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='questions.csv' datatype='table' name='[__tableau_internal_object_id__].[questions.csv_5615D94D4E7843A791325C880A81A4DF]' role='measure' type='quantitative' />
+      <column caption='All Tags' datatype='string' name='[all_tags]' role='dimension' type='nominal' />
+      <column caption='Emails Sent Count' datatype='integer' name='[emails_sent_count]' role='measure' type='quantitative' />
+      <column caption='First Answer Posted' datatype='string' name='[first_answer_posted]' role='dimension' type='nominal' />
+      <column caption='First Comment Posted' datatype='string' name='[first_comment_posted]' role='dimension' type='nominal' />
+      <column caption='First Email Sent' datatype='string' name='[first_email_sent]' role='dimension' type='nominal' />
+      <column caption='Last Answer Posted' datatype='string' name='[last_answer_posted]' role='dimension' type='nominal' />
+      <column caption='Last Comment Posted' datatype='string' name='[last_comment_posted]' role='dimension' type='nominal' />
+      <column caption='Last Email Sent' datatype='string' name='[last_email_sent]' role='dimension' type='nominal' />
+      <column caption='Professionals Notified Count' datatype='integer' name='[professionals_notified_count]' role='measure' type='quantitative' />
+      <column caption='Question Score' datatype='integer' name='[question_score]' role='measure' type='quantitative' />
+      <column caption='Questions Author Id' datatype='string' name='[questions_author_id]' role='dimension' type='nominal' />
+      <column caption='Questions Body' datatype='string' name='[questions_body]' role='dimension' type='nominal' />
+      <column caption='Questions Date Added - Split 10' datatype='string' name='[questions_date_added - Split 10]' role='dimension' type='nominal' user:SplitFieldIndex='10' user:SplitFieldOrigin='[federated.0an0ftc1u6a4ml12s8bfb18dgfpe].[questions_date_added]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [questions_date_added], &quot;&apos; &apos;&quot;, -7 ) )' />
+      </column>
+      <column caption='Questions Date Added - Split 11' datatype='string' name='[questions_date_added - Split 11]' role='dimension' type='nominal' user:SplitFieldIndex='11' user:SplitFieldOrigin='[federated.0an0ftc1u6a4ml12s8bfb18dgfpe].[questions_date_added]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [questions_date_added], &quot;&apos; &apos;&quot;, -6 ) )' />
+      </column>
+      <column caption='Questions Date Added - Split 12' datatype='string' name='[questions_date_added - Split 12]' role='dimension' type='nominal' user:SplitFieldIndex='12' user:SplitFieldOrigin='[federated.0an0ftc1u6a4ml12s8bfb18dgfpe].[questions_date_added]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [questions_date_added], &quot;&apos; &apos;&quot;, -5 ) )' />
+      </column>
+      <column caption='Questions Date Added - Split 13' datatype='string' name='[questions_date_added - Split 13]' role='dimension' type='nominal' user:SplitFieldIndex='13' user:SplitFieldOrigin='[federated.0an0ftc1u6a4ml12s8bfb18dgfpe].[questions_date_added]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [questions_date_added], &quot;&apos; &apos;&quot;, -4 ) )' />
+      </column>
+      <column caption='Questions Date Added - Split 14' datatype='string' name='[questions_date_added - Split 14]' role='dimension' type='nominal' user:SplitFieldIndex='14' user:SplitFieldOrigin='[federated.0an0ftc1u6a4ml12s8bfb18dgfpe].[questions_date_added]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [questions_date_added], &quot;&apos; &apos;&quot;, -3 ) )' />
+      </column>
+      <column caption='Questions Date Added - Split 15' datatype='string' name='[questions_date_added - Split 15]' role='dimension' type='nominal' user:SplitFieldIndex='15' user:SplitFieldOrigin='[federated.0an0ftc1u6a4ml12s8bfb18dgfpe].[questions_date_added]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [questions_date_added], &quot;&apos; &apos;&quot;, -2 ) )' />
+      </column>
+      <column caption='Questions Date Added - Split 16' datatype='string' name='[questions_date_added - Split 16]' role='dimension' type='nominal' user:SplitFieldIndex='16' user:SplitFieldOrigin='[federated.0an0ftc1u6a4ml12s8bfb18dgfpe].[questions_date_added]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [questions_date_added], &quot;&apos; &apos;&quot;, -1 ) )' />
+      </column>
+      <column caption='Questions Date Added - Split 1' datatype='string' name='[questions_date_added - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0an0ftc1u6a4ml12s8bfb18dgfpe].[questions_date_added]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [questions_date_added], &quot; &quot;, -8 ) )' />
+      </column>
+      <column caption='Questions Date Added - Split 2' datatype='string' name='[questions_date_added - Split 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0an0ftc1u6a4ml12s8bfb18dgfpe].[questions_date_added]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [questions_date_added], &quot; &quot;, -7 ) )' />
+      </column>
+      <column caption='Questions Date Added - Split 3' datatype='string' name='[questions_date_added - Split 3]' role='dimension' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.0an0ftc1u6a4ml12s8bfb18dgfpe].[questions_date_added]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [questions_date_added], &quot; &quot;, -6 ) )' />
+      </column>
+      <column caption='Questions Date Added - Split 4' datatype='string' name='[questions_date_added - Split 4]' role='dimension' type='nominal' user:SplitFieldIndex='4' user:SplitFieldOrigin='[federated.0an0ftc1u6a4ml12s8bfb18dgfpe].[questions_date_added]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [questions_date_added], &quot; &quot;, -5 ) )' />
+      </column>
+      <column caption='Questions Date Added - Split 5' datatype='string' name='[questions_date_added - Split 5]' role='dimension' type='nominal' user:SplitFieldIndex='5' user:SplitFieldOrigin='[federated.0an0ftc1u6a4ml12s8bfb18dgfpe].[questions_date_added]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [questions_date_added], &quot; &quot;, -4 ) )' />
+      </column>
+      <column caption='Questions Date Added - Split 6' datatype='string' name='[questions_date_added - Split 6]' role='dimension' type='nominal' user:SplitFieldIndex='6' user:SplitFieldOrigin='[federated.0an0ftc1u6a4ml12s8bfb18dgfpe].[questions_date_added]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [questions_date_added], &quot; &quot;, -3 ) )' />
+      </column>
+      <column caption='Questions Date Added - Split 7' datatype='string' name='[questions_date_added - Split 7]' role='dimension' type='nominal' user:SplitFieldIndex='7' user:SplitFieldOrigin='[federated.0an0ftc1u6a4ml12s8bfb18dgfpe].[questions_date_added]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [questions_date_added], &quot; &quot;, -2 ) )' />
+      </column>
+      <column caption='Questions Date Added - Split 8' datatype='string' name='[questions_date_added - Split 8]' role='dimension' type='nominal' user:SplitFieldIndex='8' user:SplitFieldOrigin='[federated.0an0ftc1u6a4ml12s8bfb18dgfpe].[questions_date_added]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [questions_date_added], &quot; &quot;, -1 ) )' />
+      </column>
+      <column caption='Questions Date Added - Split 9' datatype='string' name='[questions_date_added - Split 9]' role='dimension' type='nominal' user:SplitFieldIndex='9' user:SplitFieldOrigin='[federated.0an0ftc1u6a4ml12s8bfb18dgfpe].[questions_date_added]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [questions_date_added], &quot;&apos; &apos;&quot;, -8 ) )' />
+      </column>
+      <column caption='Questions Date Added' datatype='string' name='[questions_date_added]' role='dimension' type='nominal' />
+      <column caption='Questions Id' datatype='string' name='[questions_id]' role='dimension' type='nominal' />
+      <column caption='Questions Title' datatype='string' name='[questions_title]' role='dimension' type='nominal' />
+      <column caption='Students Date Joined' datatype='string' name='[students_date_joined]' role='dimension' type='nominal' />
+      <column caption='Students Location' datatype='string' name='[students_location]' role='dimension' type='nominal' />
+      <column caption='Tag Count' datatype='integer' name='[tag_count]' role='measure' type='quantitative' />
+      <column caption='Total Answers' datatype='integer' name='[total_answers]' role='measure' type='quantitative' />
+      <column caption='Total Comments' datatype='integer' name='[total_comments]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='F1' />
+        <field-sort-custom-order field='questions_id' />
+        <field-sort-custom-order field='questions_author_id' />
+        <field-sort-custom-order field='questions_date_added' />
+        <field-sort-custom-order field='Calculation_1311954897958158337' />
+        <field-sort-custom-order field='Calculation_1311954897958604802' />
+        <field-sort-custom-order field='Calculation_1311954897957199872' />
+        <field-sort-custom-order field='questions_title' />
+        <field-sort-custom-order field='questions_body' />
+        <field-sort-custom-order field='question_score' />
+        <field-sort-custom-order field='all_tags' />
+        <field-sort-custom-order field='tag_count' />
+        <field-sort-custom-order field='emails_sent_count' />
+        <field-sort-custom-order field='professionals_notified_count' />
+        <field-sort-custom-order field='first_email_sent' />
+        <field-sort-custom-order field='last_email_sent' />
+        <field-sort-custom-order field='total_answers' />
+        <field-sort-custom-order field='first_answer_posted' />
+        <field-sort-custom-order field='last_answer_posted' />
+        <field-sort-custom-order field='total_comments' />
+        <field-sort-custom-order field='first_comment_posted' />
+        <field-sort-custom-order field='last_comment_posted' />
+        <field-sort-custom-order field='students_location' />
+        <field-sort-custom-order field='students_date_joined' />
+        <field-sort-custom-order field='questions_date_added - Split 1' />
+        <field-sort-custom-order field='questions_date_added - Split 2' />
+        <field-sort-custom-order field='questions_date_added - Split 3' />
+        <field-sort-custom-order field='questions_date_added - Split 4' />
+        <field-sort-custom-order field='questions_date_added - Split 5' />
+        <field-sort-custom-order field='questions_date_added - Split 6' />
+        <field-sort-custom-order field='questions_date_added - Split 7' />
+        <field-sort-custom-order field='questions_date_added - Split 8' />
+        <field-sort-custom-order field='questions_date_added - Split 9' />
+        <field-sort-custom-order field='questions_date_added - Split 10' />
+        <field-sort-custom-order field='questions_date_added - Split 11' />
+        <field-sort-custom-order field='questions_date_added - Split 12' />
+        <field-sort-custom-order field='questions_date_added - Split 13' />
+        <field-sort-custom-order field='questions_date_added - Split 14' />
+        <field-sort-custom-order field='questions_date_added - Split 15' />
+        <field-sort-custom-order field='questions_date_added - Split 16' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='questions.csv' id='questions.csv_5615D94D4E7843A791325C880A81A4DF'>
+            <properties context=''>
+              <relation connection='textscan.0dezwj61i8gcx410cyp94138k3cd' name='questions.csv' table='[questions#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:U10001:no:A1:U10001:1' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='questions_id' ordinal='1' />
+                  <column datatype='string' name='questions_author_id' ordinal='2' />
+                  <column datatype='string' date-parse-format='yyyy-MM-dd HH:mm:ss zzzZ' name='questions_date_added' ordinal='3' />
+                  <column datatype='string' name='questions_title' ordinal='4' />
+                  <column datatype='string' name='questions_body' ordinal='5' />
+                  <column datatype='integer' name='question_score' ordinal='6' />
+                  <column datatype='string' name='all_tags' ordinal='7' />
+                  <column datatype='integer' name='tag_count' ordinal='8' />
+                  <column datatype='integer' name='emails_sent_count' ordinal='9' />
+                  <column datatype='integer' name='professionals_notified_count' ordinal='10' />
+                  <column datatype='string' name='first_email_sent' ordinal='11' />
+                  <column datatype='string' name='last_email_sent' ordinal='12' />
+                  <column datatype='integer' name='total_answers' ordinal='13' />
+                  <column datatype='string' name='first_answer_posted' ordinal='14' />
+                  <column datatype='string' name='last_answer_posted' ordinal='15' />
+                  <column datatype='integer' name='total_comments' ordinal='16' />
+                  <column datatype='string' name='first_comment_posted' ordinal='17' />
+                  <column datatype='string' name='last_comment_posted' ordinal='18' />
+                  <column datatype='string' name='students_location' ordinal='19' />
+                  <column datatype='string' name='students_date_joined' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Questions'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Time Dynamics - Questions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='questions' name='federated.0an0ftc1u6a4ml12s8bfb18dgfpe' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0an0ftc1u6a4ml12s8bfb18dgfpe'>
+            <column caption='Time' datatype='string' datatype-customized='true' name='[Calculation_1311954897958158337]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT(STR([questions_date_added]),&apos; &apos;,2)' />
+            </column>
+            <column datatype='integer' name='[F1]' role='measure' type='quantitative' />
+            <column-instance column='[F1]' derivation='Count' name='[cnt:F1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1311954897958158337]' derivation='None' name='[none:Calculation_1311954897958158337:nk]' pivot='key' type='nominal' />
+            <column caption='Questions Date Added' datatype='string' name='[questions_date_added]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0an0ftc1u6a4ml12s8bfb18dgfpe].[none:Calculation_1311954897958158337:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0an0ftc1u6a4ml12s8bfb18dgfpe].[cnt:F1:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0an0ftc1u6a4ml12s8bfb18dgfpe].[cnt:F1:qk]</rows>
+        <cols>[federated.0an0ftc1u6a4ml12s8bfb18dgfpe].[none:Calculation_1311954897958158337:nk]</cols>
+      </table>
+      <simple-id uuid='{4E5B707D-B0E2-41E3-B0FB-EE1ECADC0BF2}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{11E6DE5E-4BCD-4587-882D-D180AF65B69B}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Questions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0an0ftc1u6a4ml12s8bfb18dgfpe].[none:Calculation_1311954897958158337:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CD7C19FB-B825-4B89-9D0B-BBB548DDD456}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2DF72E1D-9B88-465A-9B3E-D54319F6F652}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Questions' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
